@@ -1,0 +1,2 @@
+# set tx queue size for canbus
+SUBSYSTEM=="net", ACTION=="add|change", KERNEL=="can0" ATTR{tx_queue_len}="256"
